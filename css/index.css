@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body::before,
+body::after {
+  position: absolute;
+  content: "";
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 1);
+}
+body::after {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 0 0 50% 50%;
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 1);
+}
+.loginback,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginback {
+  padding: 15px;
+  margin: 10px;
+  position: relative;
+  border-radius: 20px;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  height: 70vh;
+  width: 100vh;
+  box-shadow: 0 14px 26px -8px rgba(0, 0, 0, 1);
+}
+.loginback::before,
+.loginback::after {
+  position: absolute;
+  content: "";
+}
+.tags {
+  padding: 5px;
+}
+
+.loginback::before {
+  width: 0;
+  height: 0;
+  bottom: -50px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #09c6f9;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+input {
+  border-radius: 20px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  overflow: hidden;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 900;
+  color: white;
+  background-color: red;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 1);
+}
+
+.button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #f0ebcc;
+}
